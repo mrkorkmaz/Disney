@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+*{
+    margin: 0%;
+    padding: 0%;
+
+}
+
+body{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.banner{
+    background:
+    linear-gradient(rgba(0,0,0,0.5),#001685),
+    url(./images/girl-laptop.jpg) ;
+    
+    /* background-image: url(./images/girl-laptop.jpg);
+    background:linear-gradient(rgba(0,0,0,0.5),#001685); bu şekilde yazdığımızda sadece rengi görüyor, resmi algılamıyor. Virgülle ard arda yukarıdaki gibi eklemek gerekiyor*/
+
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+}
+    
+.line{
+    height: 1px;
+    width: 100%;
+    background: #b7c3fd;
+}
+
+.logo{
+    position: absolute;
+    width: 200px;
+    height: 150px;
+    top: 15px;
+    left:40px ;
+}
+
+.banner-text{
+    text-align: center;
+    color: white;
+    padding-top: 150px;
+
+}
+
+.banner-text h1{
+    font-family: 'Pacifico', cursive;
+    font-size: 100px;
+}
+
+.banner-text p{
+    color:rgb(0, 221, 255);
+    font-size: 20px;
+    font-style: italic;
+    
+}
+
+.banner-button{
+    margin: 70px auto 0;
+}
+
+.banner-button a{
+    position: relative;
+    /* width: 100px; */
+    text-decoration: none;
+    margin: 0 15px;
+    color: white;
+    border: 4px solid white;
+    padding: 10px 35px;
+    transition: 0.5s;
+    z-index: 1;
+}
+
+.banner-button a span{
+    position: absolute;
+    /* width: 50%; buna gerek yok ama sonradan hoverla gelen genişliğin işlemesi için başta width in 0 olması gerekiyor tamamen yokluğunda işlemiyor */
+    width: 0;
+    height: 100%;
+    background-color: white;
+    transition: 0.5s;
+    left: 0;
+    top: 0;
+    z-index: -1;
+}
+
+.banner-button a:hover span{
+    width: 100%;
+}
+
+.banner-button a:hover{
+    color: #001685;
+}
+
+.menu-button #menu{
+    position: absolute;
+    top: 0%;
+    right: 0%;
+    color: white;
+    padding: 5px;
+    background-color:rgb(30, 51, 174);
+    border-radius: 3px;
+    font-size: 25px;
+    margin: 15px;
+    /* cursor: pointer; */
+    z-index: 3;
+
+}
+
+.navside nav{
+    width: 200px;
+    background-color: #001685;
+    position:fixed ;
+    height: 100vh;
+    /* top: 150%;
+    right: 150%; */
+    right: 0%;
+    top: 0%;
+    transition: 0.5s;
+    
+    
+}
+
+.navside nav ul li {
+    
+    margin-top: 50px;
+    padding-left: 20px;
+    list-style: none;
+}
+
+.navside nav ul li a{
+    text-decoration: none;
+    color: rgb(0, 221, 255);
+    font-weight: bold;
+   
+}
+
+/* .menu-button a:hover nav{
+    top: 0%;
+    right: 0%;
+    
+} */
+
